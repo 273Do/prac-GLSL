@@ -2,9 +2,7 @@
 precision mediump float;
 #endif
 
-uniform vec2 u_resolution;
-uniform vec2 u_mouse;
-uniform float u_time;
+uniform vec2 u_resolution; // 画面サイズ(x, y)
 
 void main() {
     vec2 st = (gl_FragCoord.xy * 2.0 - u_resolution.xy) /
